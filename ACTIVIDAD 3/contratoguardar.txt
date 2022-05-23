@@ -1,0 +1,2 @@
+PagoMensual;FechaInicio;FechaFin;DNIjugador;NombreEquipo
+5000.0;2022-11-14;2023-05-14;DNI 1;Equipo a;
