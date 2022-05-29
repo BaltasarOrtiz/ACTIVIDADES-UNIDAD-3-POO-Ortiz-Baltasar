@@ -1,0 +1,57 @@
+[
+    {
+        "__class__": "Televisor",
+        "__atributos__": {
+            "marca": "Hitachi",
+            "modelo": "IIOER89",
+            "color": "Blanco",
+            "paisdefabrica": "USA",
+            "precio": 45400.0,
+            "tipodepantalla": "LCD",
+            "pulgadas": "55.5",
+            "tipodefinicion": "HD",
+            "conexionainternet": true
+        }
+    },
+    {
+        "__class__": "Lavarropa",
+        "__atributos__": {
+            "marca": "Liliana",
+            "modelo": "45LDKN",
+            "color": "Blanco",
+            "paisdefabrica": "Argentina",
+            "precio": 450000.0,
+            "capacidadlavado": 4,
+            "velocidadcentrifugado": 2300,
+            "cantidadprogramas": 2,
+            "tipodecarga": "Superior"
+        }
+    },
+    {
+        "__class__": "Heladera",
+        "__atributos__": {
+            "marca": "Philips",
+            "modelo": "FKROA",
+            "color": "Negro",
+            "paisdefabrica": "Argentina",
+            "precio": 325000.0,
+            "capacidadlitros": 2300.0,
+            "freezer": true,
+            "ciclica": null
+        }
+    },
+    {
+        "__class__": "Lavarropa",
+        "__atributos__": {
+            "marca": "LG",
+            "modelo": "kaj231",
+            "color": "blanco",
+            "paisdefabrica": "Argentina",
+            "precio": 50000.0,
+            "capacidadlavado": 500,
+            "velocidadcentrifugado": 500,
+            "cantidadprogramas": 20,
+            "tipodecarga": "Frontal"
+        }
+    }
+]
