@@ -9,7 +9,6 @@ class Investigador(Personal):
         self.__tipoInv = kwargs["tipo"]
         super().__init__(**kwargs)
 
-
     def getArea(self):
         return self.__areaInv
 
@@ -30,3 +29,11 @@ class Investigador(Personal):
                 )
             )
         return d
+
+    def calculaSueldo(self):
+        total = self.getSueldo()
+        total = total + (total*self.getAnti()/100)
+        self.setSueldo(total)
+
+    def getTipoAgente(self):
+        return self.__class__.__name__

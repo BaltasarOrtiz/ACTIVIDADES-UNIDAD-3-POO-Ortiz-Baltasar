@@ -119,4 +119,39 @@ class Lista:
 
         print("Cantidad de Docentes Investigadores: {} -- Cantidad de Investigadores: {}".format(cantDocentesInv, cantInv))
 
+    def listadoOrdenado(self):
+        lista = []
+        cabeza = self.__comienzo
 
+        while cabeza is not None:
+            dato = cabeza.getDato()
+            dato.calculaSueldo()
+            lista.append(dato)
+            cabeza = cabeza.getSiguiente()
+
+        listaord = sorted(lista)
+        for elem in listaord:
+            print("Nombre y apellido: {}, Tipo de agente: {}, Sueldo:{}".format(elem.getNombre() + " " + elem.getApellido(),elem.getTipoAgente(),elem.getSueldo()))
+
+    def mostrarlistadoinv(self, categ):
+        total = 0
+        cabeza = self.__comienzo
+        while cabeza is not None:
+            if type(cabeza.getDato()) == DocenteInvestigador:
+                if cabeza.getDato().getproincen() == "I" or "II" or "III" or "IV" or "V":
+                    print("Nombre y apellido: {}, Importe Extra: {}".format(cabeza.getDato().getNombre() + " " + cabeza.getDato().getApellido(), cabeza.getDato().getimporte()))
+                    total+=cabeza.getDato().getimporte()
+        print("Total de dinero que la Secretaría de Investigación debe solicitar al Ministerio en concepto de importe extra: {}".format(total))
+
+
+    def obtenerlista(self):
+        lista = []
+        cabeza = self.__comienzo
+        while cabeza is not None:
+            dato = cabeza.getDato()
+            dicc = dato.toJson()
+            lista.append(dicc)
+
+            cabeza = cabeza.getSiguiente()
+
+        return lista

@@ -33,7 +33,11 @@ class Personal:
     def __gt__(self, other):
         return self.getNombre() > other.getNombre()
 
+    #polimorfismo
     def getTipoAgente(self):
         pass
 
-
+    def calculaSueldo(self):
+        pass
+    def setSueldo(self, valor : float):
+        self.__sueldob = valor

@@ -36,4 +36,7 @@ class DocenteInvestigador(Docente, Investigador):
     def getimporte(self):
         return self.__importeext
 
-
+    def calculaSueldo(self):
+        total = self.getSueldoDocente()
+        total += self.__importeEx
+        self.setSueldo(total)

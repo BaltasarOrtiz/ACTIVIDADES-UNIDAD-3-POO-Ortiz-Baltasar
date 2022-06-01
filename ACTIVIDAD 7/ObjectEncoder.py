@@ -10,8 +10,8 @@ class ObjectEncoder:
     def cargaJson(self,jsonF):
         objeto1 = Docente(cuil="20-3454506-8",apellido="Perez",nombre="Nicolas",sueldo=89000,anti=3,carrera="LCC",cargo="JTP",catedra="Sistemas de Informacion")
         objeto2 = Investigador(cuil="15-324235-5",apellido="Dominguez",nombre="Juan",sueldo=120000,anti=2,area="Computacional",tipo="Cientifica")
-        objeto3 = PersonalApoyo(cuil="12-456543-4",apellido="Castro",nombre="Maria",sueldo=140000,anti=2,categoria="I")
-        objeto4 = DocenteInvestigador(programa="I",importe=25000, cuil="18-3446706-8",apellido="Lopez",nombre="Marcos",sueldo=89000,anti=3,catedra="EyFCI",carrera="LCC",cargo="Jefe de Catedra",area="Estructuras",tipo="Teorica")
+        objeto3 = PersonalApoyo(cuil="12-456543-4",apellido="Castro",nombre="Maria",sueldo=140000,anti=2,categoria="12")
+        objeto4 = DocenteInvestigador(programa="I",importe=25000, cuil="18-3446706-8",apellido="Lopez",nombre="Marcos",sueldo=89000,anti=3,catedra="EyFCI",carrera="LCC",cargo="Simple",area="Estructuras",tipo="Teorica")
 
 
         #print(objeto4.getcuil())
@@ -82,4 +82,6 @@ class ObjectEncoder:
             objeto = None
 
         return objeto
+
+
 
