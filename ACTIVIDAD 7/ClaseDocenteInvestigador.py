@@ -3,7 +3,7 @@ from ClaseInvestigador import Investigador
 
 class DocenteInvestigador(Docente, Investigador):
     __progincen = ""
-    __importeext = float
+    __importeEx = float
 
     def __init__(self, **kwargs):
         self.__progIncen = kwargs["programa"]
@@ -34,7 +34,7 @@ class DocenteInvestigador(Docente, Investigador):
         return self.__progIncen
 
     def getimporte(self):
-        return self.__importeext
+        return self.__importeEx
 
     def calculaSueldo(self):
         total = self.getSueldoDocente()

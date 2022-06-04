@@ -137,10 +137,12 @@ class Lista:
         total = 0
         cabeza = self.__comienzo
         while cabeza is not None:
-            if type(cabeza.getDato()) == DocenteInvestigador:
-                if cabeza.getDato().getproincen() == "I" or "II" or "III" or "IV" or "V":
+            if type(cabeza.getDato()) is DocenteInvestigador:
+                if cabeza.getDato().getproincen() == categ:
                     print("Nombre y apellido: {}, Importe Extra: {}".format(cabeza.getDato().getNombre() + " " + cabeza.getDato().getApellido(), cabeza.getDato().getimporte()))
-                    total+=cabeza.getDato().getimporte()
+                    dato = cabeza.getDato()
+                    total+=dato.getimporte()
+            cabeza = cabeza.getSiguiente()
         print("Total de dinero que la Secretaría de Investigación debe solicitar al Ministerio en concepto de importe extra: {}".format(total))
 
 

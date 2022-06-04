@@ -31,7 +31,12 @@ class Personal:
 
 
     def __gt__(self, other):
-        return self.getNombre() > other.getNombre()
+        band = False
+        if self.__apellido != other.__apellido and self.__apellido > other.__apellido:
+            band = True
+        if self.__apellido == other.__apellido and self.__nombre > other.__nombre:
+            band = True
+        return band
 
     #polimorfismo
     def getTipoAgente(self):
